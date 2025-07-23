@@ -1,0 +1,10 @@
+version: "3.8"  # Version de la syntaxe Docker Compose utilisée (optionnel mais recommandé)
+
+services:
+  mongo:  # Nom du service Docker
+    image: mongo  # Image officielle MongoDB depuis Docker Hub
+    container_name: mongo-local  # Nom personnalisé du conteneur Docker
+    ports:
+      - "27017:27017"  # Mappe le port 27017 du conteneur au port 27017 de l'hôte (accès local à MongoDB)
+    volumes:
+      - ./mongo_data:/data/db  # Monte le dossier local ./mongo_data pour persister les données MongoDB

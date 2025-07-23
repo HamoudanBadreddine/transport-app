@@ -1,0 +1,4 @@
+streamlit         # Interface graphique
+pymongo           # Connexion à MongoDB
+python-dotenv     # Charger les variables d’environnement
+requests          # Appels HTTP si nécessaire
